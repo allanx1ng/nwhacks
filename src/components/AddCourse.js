@@ -1,16 +1,27 @@
 import courseData from "../data/courseData.json"
+import { useState, useEffect } from "react"
 
 const AddCourse = () => {
+  const [courseSelectVisible, setCourseSelectVisible] = useState(false)
 
-    //var fs = require('fs');
+  function buttonClick() {
+    setCourseSelectVisible(!courseSelectVisible)
+    console.log(courseSelectVisible)
+  }
+
   return (
     <>
-      <div className="addCourse"></div>
-      <select name="cars" id="cars">
-        {courseData.map((i) => (
-          <option>{i.name}</option>
-        ))}
-      </select>
+      <button className="addCourse" onClick={()=>buttonClick()}></button>
+
+      <div style={courseSelectVisible ? {display: "block"}:{
+        display: "none"
+      }}>
+        <select name="cars" id="cars">
+          {courseData.map((i) => (
+            <option>{i.name}</option>
+          ))}
+        </select>
+      </div>
     </>
   )
 }
