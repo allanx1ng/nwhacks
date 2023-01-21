@@ -1,6 +1,7 @@
 import "../App.css"
 
 const Course = () => {
+  
   return (
     <div className="course">
       courses
@@ -12,6 +13,10 @@ const Course = () => {
       </select>
     </div>
   )
+}
+
+function setLabels() {
+
 }
 
 export default Course
