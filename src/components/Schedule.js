@@ -5,23 +5,25 @@ import { useState, useEffect } from "react"
 
 const Schedule = () => {
 
+    const [arr, setArr] = useState([0])
 
-
+    const test = () => {
+        arr.push(0)
+        setArr([...arr])
+    }
+    
   return (
     <>
-    <div className="schedule">
-      <div className="schedule-box">
-        <Term />
-        <AddTerm/>
+      <div className="schedule">
+        <div className="schedule-box">
+          {arr.map(()=>(
+            <Term/>
+          ))}
+          <AddTerm callback={test}/>
+        </div>
       </div>
-      
-
-    </div>
-    <p>
-        credits
-      </p>
+      <div>credits</div>
     </>
-    
   )
 }
 
