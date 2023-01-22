@@ -1,4 +1,5 @@
 import courseData from "../data/courseData.json"
+
 import { useState, useEffect } from "react"
 
 const AddCourse = () => {

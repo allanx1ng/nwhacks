@@ -32,6 +32,7 @@ const Course = () => {
       {array.map((i) => (
         <div className="course">{i.name}</div>
       ))}
+
     </div>
   )
 }

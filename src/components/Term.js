@@ -12,6 +12,7 @@ const Term = ({callback}) => {
         <RemoveTerm callback={callback}/>
           </div>
 
+
         <Course />
         <AddCourse/>
       </div>

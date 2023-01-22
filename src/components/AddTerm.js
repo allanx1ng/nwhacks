@@ -10,6 +10,7 @@ const AddTerm = ({callback}) => {
         <button className="addTerm" onClick={() =>{click()}}>
             button
         </button>
+
     )
 
 }
