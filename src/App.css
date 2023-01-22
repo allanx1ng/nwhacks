@@ -50,6 +50,7 @@
   /* grid-template-columns: 100%;
   grid-template-rows: 50px; */
   flex-direction: column;
+  position: relative;
   
 }
 
@@ -108,4 +109,20 @@
 
 .addCourse:hover {
   cursor: pointer;
+}
+
+.removeTerm {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-color: #f33;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 25px;
+  margin: 20px;
+}
+
+.removeTermBtn {
+  position: absolute;
+  right: 0px;
 }

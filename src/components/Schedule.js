@@ -11,13 +11,17 @@ const Schedule = () => {
         arr.push(0)
         setArr([...arr])
     }
+    const test2 = () => {
+      arr.pop();
+      setArr([...arr])
+  }
     
   return (
     <>
       <div className="schedule">
         <div className="schedule-box">
           {arr.map(()=>(
-            <Term/>
+            <Term callback={test2}/>
           ))}
           <AddTerm callback={test}/>
         </div>
