@@ -2,7 +2,7 @@ const Header = () => {
     return (
         <div className="header">
             <h1>
-                header
+                UBC Course Planner
             </h1>
         </div>
     )

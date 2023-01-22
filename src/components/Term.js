@@ -11,7 +11,6 @@ const Term = ({callback}) => {
         <div className="removeTermBtn">
         <RemoveTerm callback={callback}/>
           </div>
-        <h4>term credits: 69</h4>
 
         <Course />
         <AddCourse/>
