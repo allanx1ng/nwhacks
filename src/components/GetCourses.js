@@ -30,6 +30,7 @@ export default function () {
 
       try {
         const response = await fetch("https://ubcexplorer.io/getAllCourses")
+        // const response = await fetch("https://ubcexplorer.io/searchAny/CPSC")
         const json = await response.json()
         setData(json)
       } catch (err) {
@@ -55,9 +56,15 @@ export default function () {
   }
 
   return (
-    <div>
-      <p>Data: {JSON.stringify(data)}</p>
-    </div>
+    // <div>
+    //   <p>Data: {JSON.stringify(data)}</p>
+    // </div>
+    <>
+      {data.map((i) => (
+        <div>
+            {i.code}
+        </div>
+      ))}
+    </>
   )
-
 }
