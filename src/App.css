@@ -1,0 +1,47 @@
+.schedule {
+  display: flex;
+  justify-content: center;
+}
+
+.schedule-box {
+
+  border-color: #000;
+  border-width: 3px;
+  border-style: solid;
+  padding: 10px;
+  background-color: #f00;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+
+}
+
+.term {
+  width: 400px;
+  height: 600px;
+  background-color: #0f0;
+  margin: 10px;
+}
+
+.addTerm {
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+  margin: 10px;
+}
+
+.addTerm:hover {
+  cursor: pointer;
+}
+
+.course {
+  color: #000;
+}
+
+.addCourse {
+  width: 50px;
+  height: 50px;
+  background-color: #00f;
+  border-radius: 25px;
+}
