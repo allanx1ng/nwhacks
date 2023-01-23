@@ -4,24 +4,31 @@ import AddTerm from "./AddTerm"
 import { useState, useEffect } from "react"
 
 const Schedule = () => {
+  const [arr, setArr] = useState([0])
 
-
+  const test = () => {
+    arr.push(0)
+    setArr([...arr])
+  }
+  const test2 = () => {
+    if (arr.length > 1) {
+      arr.pop()
+      setArr([...arr])
+    }
+  }
 
   return (
     <>
-    <div className="schedule">
-      <div className="schedule-box">
-        <Term />
-        <AddTerm/>
+      <div className="schedule">
+        <div className="schedule-box">
+          {arr.map(() => (
+            <Term callback={test2} />
+          ))}
+          <AddTerm callback={test} />
+        </div>
       </div>
-      
-
-    </div>
-    <p>
-        credits
-      </p>
+      <div>credits</div>
     </>
-    
   )
 }
 

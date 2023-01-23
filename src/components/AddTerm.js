@@ -1,12 +1,16 @@
 
 
+const AddTerm = ({callback}) => {
 
-const AddTerm = () => {
+    function click() {
+        callback()
+    }
 
     return(
-        <div className="addTerm">
+        <button className="addTerm" onClick={() =>{click()}}>
+            button
+        </button>
 
-        </div>
     )
 
 }

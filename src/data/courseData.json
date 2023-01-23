@@ -1,0 +1,20 @@
+[
+    {},
+    {
+        "name": "CPSC110",
+        "credits": 4
+    },
+    {
+        "name": "CPSC310",
+        "credits": 4
+    },
+    {
+        "name": "CPSC210",
+        "credits": 4
+    },
+    {
+        "name": "CPSC121",
+        "credits": 4
+    }
+
+]
